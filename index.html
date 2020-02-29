@@ -1,69 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="oric">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hadi Bux Mahessar</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="main.js"></script>
 
+    <title>ORIC</title>
+    <!-------------------BootStrap Files------------------>
+    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="Bootstrap files\css\bootstrap.min.css" type="text/css"> 
 
+    <!-------------------------Angularjs / Js Files------------------>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-------------------------CSS Files------------------>
+    <link rel="stylesheet" href="CSS Files/style1.css">
+    <link rel="stylesheet" href="CSS Files/navstyle.css">
+    <link rel="stylesheet" href="CSS Files/slidstyle.css">
+    <link rel="stylesheet" href="CSS Files/topbtnstyle.css">
+
+    <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">About</a</li>
-                <li><a href="">Achievements</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="info">
-        <p>
-            I run Social Champ <br> I'm a software developer<br> I've transformed into a social media expert<br> I've represented Nokia and Microsoft in my geeky days <br>I failed in three startups and now run the fourth - Social Champ <br>I run OuzelSystems,
-            a software consultancy firm to bootstrap <br>I give talks on lessons I learnt from my past start-up journeys<br> I transformed my deck into motivational deck for university grads<br> I train people on latest social media strategies - hacks,
-            tips and tricks<br> I train and introduce coding to young kids and even CS university grads<br> I love hiking, fishing, swimming, diving and cliff jumping <br>I'm from Pakistan, grew up in Qatar and studied in an Indian School <br>I've silver
-            hair not white and they are natural. <br>I'm the fastest man alive, I'm -The Flash!
-        </p>
-    </div>
-    <div id="next-section">
-        <img style="max-width:18%;height:auto;" src="section2.jpg" alt="">
-        <h2 style="font-family: 'Courier New', Courier, monospace; border-bottom: 5px solid yellowgreen">HADI BUX MAHESSAR</h2>
-        <p>SOMETHING ABOUT PEACE</p>
-        <p style="font-size: 18px;line-height: 35px; text-align: justify;">Sameer Ahmed Khan is the co-founder and CEO at "Social Champ" and "OuzelSystems". Social Champ is the best way to automate all your social media efforts, day-to-day posting, A/B testing and optimization. OuzelSystems is a software consulting focusing
-            on latest state of the art technologies.</p>
-        <p style="font-size: 18px;line-height: 32px; text-align: justify;">Learning from his previous start-up mistakes in "GameOChat", "Educating Dreams" & "RemindZapp" Sameer speaks in many universities, podcasts and webinars sharing his experience and saving years’ worth of mistakes of new entrepreneurs. He also conducts
-            technical coding and social media workshops based on requirements for kids, university students and professionals.</p>
-        <p style="font-size: 18px;line-height: 30px; text-align: justify;">Sameer received his early education in Qatar, later achieved 2nd position in Bachelors' Degree in Computer Science from University of Karachi, Pakistan. He is also a Former Nokia Developer Champion, Microsoft Certified Professional & Specialist,
-            Microsoft Community Speaker and former Microsoft Student Partner.</p>
-    </div>
-    <div id="third-section">
-        <img src="tech.jpg" alt="">
-        <h2 style="font-family: 'Courier New', Courier, monospace; border-bottom: 5px solid yellowgreen">CODER</h2>
-        <p style="font-size: 18px;line-height: 32px; text-align: justify;">Sameer codes cross-platform apps using Ionic. He is also full stack MEAN developer. However, he focuses more on front-end development utilizing his design sense in implementing responsive user interface.</p>
-        <p style="font-size: 18px;line-height: 30px; text-align: justify;">He is also a fan of; automation using Grunt and Gulp, source code management using Git, Scrum methodologies, and deployment processes on Azure, AWS and Heroku.</p>
-    </div>
-    <footer id="footer">
-        <a href="#"><i id="social" onmouseover="grow()" onmouseout="same()"   class="fab fa-facebook-square"></i></a>
-        <a href="#"><i id="social" onmouseover="grow()" onmouseout="same()" class="fab fa-instagram"></i ></a>
+<body ng-controller="Ctroric">
+    <!----------------Header------------------------->
+<div class="stk">
+<header class="head"> 
+        <img id="imag" src="image/oric logo2.jpg" class="img-fluid" alt="oric logo" style="float:left; max-width: 8%; max-height: 8%;" >
+        <img id="imag" src="image/mono.jpg" class="img-fluid" alt="quest logo" style="float:right;max-width: 10%;max-height: 10%;">
+         <h1 style="text-align: center; font-family: Elianto; color: rgba(11, 166, 230, 1);">ORIC</h1>
+         <p style="text-align: center; margin-top: -2vw;  color: rgba(11, 166, 230, 1); ">Offices of Research, Innovation and Commercialization</p>
+</header>
+
+    <!----------------Navigation Side Bar------------------------->
+<nav>
+<div class="navbar ic1 nav1">
+  <a href="#Home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#Vision"><i class="fa fa-fw fa-eye"></i>Vision</a>
+  <a href="#Team"><i class="fa fa-fw fa-group"></i> Team</a>
+  <a href="#Contact"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
+</div>
+
+<div class="icon-bar1  nav2 font">                <!------------- screen and (max-width: 800px){---------------------->
+  <a href="#Home" ><i class="fa fa-fw fa-home "><p>Home</p></i></a>
+  <a href="#Vision"><i class="fa fa-fw fa-eye"><p>Vision</p></i></a>
+  <a href="#Team"><i class="fa fa-fw fa-group"><p>Team</p></i></a>
+  <a href="#Contact"><i class="fa fa-fw fa-envelope"><p>Contact</p></i></a>
+</div>
+</nav>
+<!----------------------------------------------------------------->
+
+<!------------------------------Right Side----------------------------------->
+
+    <!--nav class="col col-lg-2" style="background-color: rgba(11, 166, 230, 1); ">
+        <ul style="position: fixed;">
+            <li><a href="" ng-click="Home()">Home</a></li>
+            <li><a href="" ng-click="News()">News&Events</a></li>
+            <li><a href="" ng-click="Gallery()">Gallery</a></li>
+            <li><a href="" ng-click="Contact()">Contact</a></li>
+        </ul>
+    </nav-->
+<!----------------------------------------------------------------->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<section> <!---------------------------Slid show Images-------------------------------------->
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img src="image\1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="image\2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="image\3.jpg" style="width:100%">
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top: 0px;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<h5 id="Home"></h5>
+<br>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+    </section><!-----------------------------end of Code slid show------------------------------------>
+
+ <article class="container">
+ 		<div class="common"><!--------------------------Introduction / Home------------------------------>
+        <h2 class="display-5"> Office of Research Innovation and Commerciallization</h2><br>
+        <p id="introduction">
+            The Office of the Research, Innovation and Commercialization has been established at Quaid-e-Awam University of Engineering, Science and Technology, Nawabshah, Sindh, Pakistan. As universities become more entrepreneurial and look toward technology transfer
+            into non-traditional fields, there is a need for alternative conceptualizations of technology transfer that are more accurate and realistic than the traditional linear model. The Office of the Research Innovation and Commercialization are
+            being establish to link research and commercialization from the University with emerging and existing firms across Pakistan and around the world. The ORIC consists of three important wings namely Research Development and Operation, Innovation<h5 id="Vision"></h5>
+            and Research Commercialization/Entrepreneurship.
+        </p>  </div>
+
+        <div class="common"> <!-----------------------Vision---------------------------->
+        <h2 class="display-5">Vision</h2>
+        <p id="introduction">The office's vision is to enable and lead Pakistan's transformation to a knowledge-based economy dependent upon innovation and entrepreneurship.</p>
+        </div>
+
+        <div class="common"> <!-----------------------Objectives---------------------------->
+        <h2 class="display-5">Objective</h2>
+        <p>The ORIC serves the following objectives.</p>
+        <ul>
+        	<li><p>Supporting the strategic research directions and policies of the university</p></li>
+        	<li><p>Improving integration of research and education at all levels of the institution</p></li>
+        	<li><p>Increasing and diversifying external research funding</p></li>
+        	<li><p>Improving recruitment and retention of the top faculty</p></li>
+        	<li><p>Improving and strengthening university-industry relationships</p></li>
+        	<li><p>Promoting entrepreneurship, technology-transfer and commercialization activities which improve and support the economy</p></li><h5 id="Team"></h5>
+        	<li><p>Promoting and improving multi-disciplinary research initiatives</p></li>
+        </div>
+        <div class="common">
+        	<h2 class="display-5">Organizational Structure</h2>
+        	<figure class="img-fluid">
+        		<img src="image/staff.jpg" class="center" alt="Organizational Structure" style="max-width: 100%; max-height: 70%">
+        	</figure>
+        </div>
+    </article>
+<h5 id="Contact"></h5>
+    <footer>
+    	<div class="container">
+    		<h2 class="display-4">Contact us</h2>
+    		<h2 class="show">Director : Prof. Dr. Pardeep Kumar</h2><br>
+    
+    	
+   					 
+  						    <img src="image/locaton.png" alt="Location Logo" class="contactimage"><h2 class="display-3" >Adress : Quaid-e-Awam University Sakrand Road, Nawabshah, Sindh, Pakistan</h2>
+  					
+   					 
+    						<img src="image/email.png" alt="Email Logo" class="contactimage"><h2 class="display-3" >Email : director_oric@quest.edu.pk</h2>
+   					
+
+     						 <img src="image/phone.png" alt="phone Logo" class="contactimage"><h2 class="display-3" >Phone :  +92 244 9370381-5 (Ext. 2640)</h2><br>
+    				
+
+            
+
+    		<h2 class="display-41">Social Links</h2>
+    		<div class="row">
+   					 <div class="col-sm">
+  						    <img src="image/facebook.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Facebook</a>
+  					  </div> 
+
+   					  <div class="col-sm">
+    						<img src="image/whatsapp.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Whatsapp</a>
+   					  </div>
+
+    				  <div class="col-sm">
+     						 <img src="image/linkedin.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Linkedin</a>
+    				  </div>
+
+              </div>
+              <hr color="white" style="margin-bottom: 5px;">
+                 <h4 class="bottom">©2020|All Rights Reserved By ORIC</h4>
     </footer>
-    <!--
-    <div id="last-section">
-        <h2 style="font-family: 'Courier New', Courier, monospace; border-bottom: 5px solid rgb(205, 107, 50);;">STAY IN TOUCH WITH ME</h2>
+    	</div>
+    	
 
-        <a style="margin-right: 0; display: block;" href=""><i  class="fab fa-facebook-f facebook"></i></a>
-        <br>
-        <a style="display: block;" href=""><i class="fab fa-linkedin-in facebook"></i></a>
+</div>
 
-
-    </div>-->
 </body>
-
-</html>
