@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+img {
+    max-width: 20%;
+    float: left;
+}
+
+#info p {
+    color: white;
+    font-size: 25x;
+}
+
+#info {
+    position: relative;
+    margin: auto;
+    top: 130px;
+    max-width: 80%;
+    font-size: 18px;
+    opacity: 0.7;
+    background-color: rgb(187, 75, 75);
+}
+
+#next-section {
+    background-color: white;
+    position: relative;
+    top: 140px;
+    max-width: 100%;
+    z-index: -2;
+}
+
+#third-section {
+    background-color: white;
+    position: relative;
+    top: 150px;
+    max-width: 1366px;
+    overflow: auto;
+}
+
+#third-section img {
+    float: right;
+    max-width: 20%;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+#last-section {
+    background: white;
+    position: relative;
+    top: 1000px;
+    max-width: 1366px;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+}
+
+::selection {
+    color: white;
+    background-color: #69c6dd;
+}
+
+li {
+    float: left;
+}
+
+li a:hover {
+    opacity: 0.8;
+    background-color: rgb(187, 75, 75);
+    color: white;
+}
+
+#info:hover {
+    background-color: #69c6dd;
+    opacity: 0.8;
+}
+
+li a {
+    opacity: 0.7;
+    font-size: 1.55vw;
+    color: white;
+    display: block;
+    padding: 8px;
+    background-color: #69c6dd;
+}
+
+footer {
+    position: relative;
+    top: 150px;
+    max-width: 1366px;
+    background-color: black;
+}
+
+footer a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#social {
+    font-size: 40px;
+    color: white;
+}
+
+.facebook {
+    margin: auto;
+    font-size: 15vw;
+    color: blue;
+    display: block;
+}
