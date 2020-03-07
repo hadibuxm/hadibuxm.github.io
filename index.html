@@ -1,221 +1,333 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="oric">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hadi Bux Mahessar</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
 
-    <title>ORIC</title>
-    <!-------------------BootStrap Files------------------>
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-reboot.min.css" type="text/css">
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap.min.css" type="text/css"> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="color/default.css" rel="stylesheet" media="screen">
 
-    <!-------------------------Angularjs / Js Files------------------>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-
-    <!-------------------------CSS Files------------------>
-    <link rel="stylesheet" href="CSS Files/style1.css">
-    <link rel="stylesheet" href="CSS Files/navstyle.css">
-    <link rel="stylesheet" href="CSS Files/slidstyle.css">
-    <link rel="stylesheet" href="CSS Files/topbtnstyle.css">
-
-    <!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body ng-controller="Ctroric">
-    <!----------------Header------------------------->
-<div class="stk">
-<header class="head"> 
-        <img id="imag" src="image/oric logo2.jpg" class="img-fluid" alt="oric logo" style="float:left; max-width: 8%; max-height: 8%;" >
-        <img id="imag" src="image/mono.jpg" class="img-fluid" alt="quest logo" style="float:right;max-width: 10%;max-height: 10%;">
-         <h1 style="text-align: center; font-family: Elianto; color: rgba(11, 166, 230, 1);">ORIC</h1>
-         <p style="text-align: center; margin-top: -2vw;  color: rgba(11, 166, 230, 1); ">Offices of Research, Innovation and Commercialization</p>
-</header>
+<body>
 
-    <!----------------Navigation Side Bar------------------------->
-<nav>
-<div class="navbar ic1 nav1">
-  <a href="#Home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#Vision"><i class="fa fa-fw fa-eye"></i>Vision</a>
-  <a href="#Team"><i class="fa fa-fw fa-group"></i> Team</a>
-  <a href="#Contact"><i class="fa fa-fw fa-envelope"></i> Contact us</a>
-</div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle nav</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-<div class="icon-bar1  nav2 font">                <!------------- screen and (max-width: 800px){---------------------->
-  <a href="#Home" ><i class="fa fa-fw fa-home "><p>Home</p></i></a>
-  <a href="#Vision"><i class="fa fa-fw fa-eye"><p>Vision</p></i></a>
-  <a href="#Team"><i class="fa fa-fw fa-group"><p>Team</p></i></a>
-  <a href="#Contact"><i class="fa fa-fw fa-envelope"><p>Contact</p></i></a>
-</div>
-</nav>
-<!----------------------------------------------------------------->
+        <!-- Logo text or image -->
+        <a class="navbar-brand" href="index.html">Hadi Bux</a>
 
-<!------------------------------Right Side----------------------------------->
-
-    <!--nav class="col col-lg-2" style="background-color: rgba(11, 166, 230, 1); ">
-        <ul style="position: fixed;">
-            <li><a href="" ng-click="Home()">Home</a></li>
-            <li><a href="" ng-click="News()">News&Events</a></li>
-            <li><a href="" ng-click="Gallery()">Gallery</a></li>
-            <li><a href="" ng-click="Contact()">Contact</a></li>
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="current"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#bottom-widget">Contact</a></li>
         </ul>
-    </nav-->
-<!----------------------------------------------------------------->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+    </div>
+  </nav>
 
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+  <!-- intro area -->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        <div class="carousel-inner" role="listbox">
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-
-
-<section> <!---------------------------Slid show Images-------------------------------------->
-<div class="slideshow-container">
-
-<div class="mySlides">
-  <div class="numbertext">1 / 3</div>
-  <img src="image\1.jpg" style="width:100%">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">2 / 3</div>
-  <img src="image\2.jpg" style="width:100%">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">3 / 3</div>
-  <img src="image\3.jpg" style="width:100%">
-</div>
-
-</div>
-
-<div style="text-align:center; margin-top: 0px;">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-<h5 id="Home"></h5>
-<br>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-</script>
-
-    </section><!-----------------------------end of Code slid show------------------------------------>
-
- <article class="container">
- 		<div class="common"><!--------------------------Introduction / Home------------------------------>
-        <h2 class="display-5"> Office of Research Innovation and Commerciallization</h2><br>
-        <p id="introduction">
-            The Office of the Research, Innovation and Commercialization has been established at Quaid-e-Awam University of Engineering, Science and Technology, Nawabshah, Sindh, Pakistan. As universities become more entrepreneurial and look toward technology transfer
-            into non-traditional fields, there is a need for alternative conceptualizations of technology transfer that are more accurate and realistic than the traditional linear model. The Office of the Research Innovation and Commercialization are
-            being establish to link research and commercialization from the University with emerging and existing firms across Pakistan and around the world. The ORIC consists of three important wings namely Research Development and Operation, Innovation<h5 id="Vision"></h5>
-            and Research Commercialization/Entrepreneurship.
-        </p>  </div>
-
-        <div class="common"> <!-----------------------Vision---------------------------->
-        <h2 class="display-5">Vision</h2>
-        <p id="introduction">The office's vision is to enable and lead Pakistan's transformation to a knowledge-based economy dependent upon innovation and entrepreneurship.</p>
-        </div>
-
-        <div class="common"> <!-----------------------Objectives---------------------------->
-        <h2 class="display-5">Objective</h2>
-        <p>The ORIC serves the following objectives.</p>
-        <ul>
-        	<li><p>Supporting the strategic research directions and policies of the university</p></li>
-        	<li><p>Improving integration of research and education at all levels of the institution</p></li>
-        	<li><p>Increasing and diversifying external research funding</p></li>
-        	<li><p>Improving recruitment and retention of the top faculty</p></li>
-        	<li><p>Improving and strengthening university-industry relationships</p></li>
-        	<li><p>Promoting entrepreneurship, technology-transfer and commercialization activities which improve and support the economy</p></li><h5 id="Team"></h5>
-        	<li><p>Promoting and improving multi-disciplinary research initiatives</p></li>
-        </div>
-        <div class="common">
-        	<h2 class="display-5">Organizational Structure</h2>
-        	<figure class="img-fluid">
-        		<img src="image/staff.jpg" class="center" alt="Organizational Structure" style="max-width: 100%; max-height: 70%">
-        	</figure>
-        </div>
-    </article>
-<h5 id="Contact"></h5>
-    <footer>
-    	<div class="container">
-    		<h2 class="display-4">Contact us</h2>
-    		<h2 class="show">Director : Prof. Dr. Pardeep Kumar</h2><br>
-    
-    	
-   					 
-  						    <img src="image/locaton.png" alt="Location Logo" class="contactimage"><h2 class="display-3" >Adress : Quaid-e-Awam University Sakrand Road, Nawabshah, Sindh, Pakistan</h2>
-  					
-   					 
-    						<img src="image/email.png" alt="Email Logo" class="contactimage"><h2 class="display-3" >Email : director_oric@quest.edu.pk</h2>
-   					
-
-     						 <img src="image/phone.png" alt="phone Logo" class="contactimage"><h2 class="display-3" >Phone :  +92 244 9370381-5 (Ext. 2640)</h2><br>
-    				
-
-            
-
-    		<h2 class="display-41">Social Links</h2>
-    		<div class="row">
-   					 <div class="col-sm">
-  						    <img src="image/facebook.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Facebook</a>
-  					  </div> 
-
-   					  <div class="col-sm">
-    						<img src="image/whatsapp.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Whatsapp</a>
-   					  </div>
-
-    				  <div class="col-sm">
-     						 <img src="image/linkedin.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Linkedin</a>
-    				  </div>
-
+          <!-- Slide 1 -->
+          <div class="item active">
+            <div class="carousel-background"><img src="img/intro/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Want a website for Your New Company!</h2>
+                <p class="animated fadeInUp">You are just at right place, We design attractive... </p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
               </div>
-              <hr color="white" style="margin-bottom: 5px;">
-                 <h4 class="bottom">©2020|All Rights Reserved By ORIC</h4>
-    </footer>
-    	</div>
-    	
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="item">
+            <div class="carousel-background"><img src="img/intro/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Creativity and technology</span></h2>
+                <p class="animated fadeInUp">with great minds comes great creativity, technologies are tools for creativity, like HTML5, bootstrap...</p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
 
-</div>
+          <!-- Slide 3 -->
+          <div class="item">
+            <div class="carousel-background"><img src="img/intro/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Professional</span></h2>
+                <p class="animated fadeInUp">We do things professionaly having eye on every angle...</p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon fa fa-angle-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon fa fa-angle-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <!-- About -->
+  <section id="about" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>About us</h2>
+            <div class="heading-line"></div>
+            <p>We build professional front-end responsive websites</p>
+          </div>
+        </div>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-md-6 about-img">
+          <img src="img/about-img.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 content">
+          <h2>HTML 5, CSS3, JavaScript, Bootstrap</h2>
+          <h3>Want a website for Your New Company, or portfolio, you are just at right place, using latest technologies for front-end web development we build professional website, with fine details </h3>
+          <p>
+            its era of technology and internet, without presence on internet, its like not having presence in modern worild
+            , NO need to worry. we will make you a professional website with affordable pricing. We use modern techologies as labelled above. we have creative team for professional work
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax 1 -->
+  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="color-light">
+            <h2 class="wow bounceInDown" data-wow-delay="0.5s">Details are the key for perfection</h2>
+            <p class="lead wow bounceInUp" data-wow-delay="1s">We mix all detailed things together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Services</h2>
+            <div class="heading-line"></div>
+            <p>Our soul aim is to serve you with professional work</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carousel-service" class="service carousel slide">
+
+            <!-- slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <h4>Website Design</h4>
+                      <p>web design/web interface is key factor for any web, we service it beautifully.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/screenshots/1.png" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <h4>Brand Identity</h4>
+                      <p>New in market! no worries we will make your brand to appear distinct from any one else.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/screenshots/2.png" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <h4>Mobile first websites</h4>
+                      <p>we design webs which appear well on mobile devices using Bootstrap.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/screenshots/3.png" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-service" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-service" data-slide-to="1"></li>
+              <li data-target="#carousel-service" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+  <section id="team" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Our Team</h2>
+            <div class="heading-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="box-team wow bounceInUp" data-wow-delay="0.1s">
+            <img src="img/team/1.jpg" alt="" class="img-circle img-responsive" />
+            <h4>Hadi Bux</h4>
+            <p>Illustrator,Bootstrap</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-wow-delay="0.5s">
+          <div class="box-team wow bounceInUp">
+            <img src="img/team/2.jpg" alt="" class="img-circle img-responsive" />
+            <h4>Muhammad Nouman</h4>
+            <p>HTML5, CSS3, JavaScript,Photoshop</p>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  <!-- Bottom widget -->
+  <section id="bottom-widget" class="home-section bg-white">
+    <div  class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInLeft">
+            <i class="fa fa-map-marker fa-4x"></i>
+            <h5>Main Office</h5>
+            <p>
+              QUEST Nawabshah<br />Hostel D-block Room no.37
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInUp">
+            <i class="fa fa-phone fa-4x"></i>
+            <h5>Call</h5>
+            <p>
+              +92 310 0092765<br> +92 3052375418
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInRight">
+            <i class="fa fa-envelope fa-4x"></i>
+            <h5>Email us</h5>
+            <p>
+              hadibuxm@outlook.com<br />mahessarm@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mar-top30">
+        <div class="col-md-12">
+          <h5>We're on social networks</h5>
+          <ul class="social-network">
+            <li><a target="_blank" href="https://www.facebook.com/hadibux.mahessar.22">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; Hadi Bux. All rights reserved.</p>
+          <div class="credits">
+            Designed by <a href="#">Hadi Bux </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/stellar.js"></script>
+
+  <!-- Template Custom Javascript File -->
+  <script src="js/custom.js"></script>
 
 </body>
+
+</html>
