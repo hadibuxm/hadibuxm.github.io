@@ -1,0 +1,123 @@
+
+@media screen and (max-width: 400px){
+
+    .show{
+        display: none;
+    }
+    nav {
+    background-color: rgb(3, 99, 94);
+    margin-top: 30px;
+    height: 50px;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    padding: 42px;   
+    }
+
+nav li a{
+    color: white;
+    font-size: 25px; 
+}
+
+nav ul li {
+    display: inline;
+    padding: 40px;    
+}
+nav ul {
+    float: right;  
+}
+nav ul li a {
+    color: whitesmoke;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    background-color:white; 
+    color:rgb(3, 99, 94);
+    text-decoration: none;
+}
+nav li a:hover{
+    color:white;
+    text-decoration: none;
+}
+aside ul li img{
+height: 30px;
+}
+aside ul{
+    margin-top: 20px;
+    float: left;
+    list-style-type: none;
+}
+
+
+.box{
+    box-shadow: 0px 0px 10px 2px grey;
+    background-size:cover ;
+    text-align: center;
+    font-family: sans-serif;
+}
+.boxcnt{
+    width: 1920x;
+    height: 400px;
+    box-shadow: 0px 0px 10px 2px grey;
+    background-size:cover ;
+    text-align: center;
+    font-family: sans-serif;
+}
+.boxex{
+    width: 851x;
+    height: 314px;
+    box-shadow: 0px 0px 10px 2px grey;
+    background-size:cover ;
+    text-align: center;
+    font-family: sans-serif;
+}
+.boxed{
+    width: 2560x;
+    height: 1440px;
+    box-shadow: 0px 0px 10px 2px grey;
+    background-size:cover ;
+    text-align: center;
+    font-family: sans-serif;
+}
+.title{
+    background-color: rgb(3, 99, 94);
+    color: white;
+    
+}
+.art{
+    font-size: 25px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px rgb(3, 99, 94);
+}
+
+footer div ul li img{
+    height: 30px;
+    margin: 5px;
+    }
+footer div ul{
+        margin-top: 20px;
+        float: left;
+        list-style-type: none;
+    }
+
+footer div ul li {
+        display: inline;
+        padding: 40px;   
+    }
+footer div ul li a{
+        color: white;  
+    }
+footer ul li a:hover{
+        background-color:white; 
+        color:rgb(3, 99, 94);
+        text-decoration: none;
+    }
+footer{
+    height: 200px;
+    background-color: rgb(3, 99, 94);
+   
+}
+
+}
