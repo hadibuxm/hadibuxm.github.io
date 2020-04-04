@@ -1,153 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="oric">
-
+<html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Offices of Research, Innovation and Commercialization</title>
-    <!-------------------BootStrap Files------------------>
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-reboot.min.css" type="text/css">
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="Bootstrap files\css\bootstrap.min.css" type="text/css"> 
-
-    <!-------------------------Angularjs / Js Files------------------>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-
-    <!-------------------------CSS Files------------------>
-    <link rel="stylesheet" href="CSS Files/style.css">
-    <link rel="stylesheet" href="CSS Files/slidstyle.css">
-    <link rel="stylesheet" href="CSS Files/topbtnstyle.css">
-
-    <!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hadi Bux Muhkumdin</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+<body>
+  
+    <nav  class="navbar navbar-expand-md bg-light  navbar-light fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Hadi Bux</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#academic">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link disable" href="#">Gallery</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!--navigation bar end here-->
+      <br><!--
+      <img id="logo" src="images/logo.png" alt="">-->
 
-<body id="Home" ng-controller="Ctroric" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!----------------Header------------------------->
-<div class="stk">
-<header class="head"> 
-        <img id="imag" src="image/oric logo2.jpg" class="img-fluid" alt="oric logo" style="float:left; max-width: 8%; max-height: 8%;" >
-        <img id="imag" src="image/mono.jpg" class="img-fluid" alt="quest logo" style="float:right;max-width: 10%;max-height: 10%;">
-         <h1 style="text-align: center; font-family: Elianto; color: rgba(11, 166, 230, 1);">ORIC</h1>
-         <h2 id="title">Offices of Research, Innovation and Commercialization</h2>
-</header>
-
-    <!----------------Navigation Side Bar------------------------->
-<nav>
-<div class="navbar ic1 nav1">
-  <a href="#Home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#Vision"><i class="fa fa-fw fa-eye"></i>Vision</a>
-  <a href="#Team"><i class="fa fa-fw fa-group"></i> Team</a>
-  <a href="#Contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-</div>
-
-<div class="icon-bar1  nav2 font">                <!------------- screen and (max-width: 800px){---------------------->
-  <a href="#Home" ><i class="fa fa-fw fa-home "><p>Home</p></i></a>
-  <a href="#Vision"><i class="fa fa-fw fa-eye"><p>Vision</p></i></a>
-  <a href="#Team"><i class="fa fa-fw fa-group"><p>Team</p></i></a>
-  <a href="#Contact"><i class="fa fa-fw fa-envelope"><p>Contact</p></i></a>
-</div>
-</nav>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<section> <!---------------------------Slid show Images-------------------------------------->
-<div class="slideshow-container">
-
-<div class="mySlides">
-  <div class="numbertext">1 / 3</div>
-  <img src="image\1.jpg" style="width:100%">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">2 / 3</div>
-  <img src="image\2.jpg" style="width:100%">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">3 / 3</div>
-  <img src="image\3.jpg" style="width:100%">
-</div>
-<div class="mySlides">
-  <div class="numbertext">3 / 3</div>
-  <img src="image\4.jpg" style="width:100%">
-</div>
-<div class="mySlides">
-  <div class="numbertext">3 / 3</div>
-  <img src="image\5.jpg" style="width:100%">
-</div>
-</div>
-
-<div style="text-align:center; margin-top: 0px;">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-<br>
-
-</section><!-----------------------------end of Code slid show------------------------------------>
-
-<article class="container">
- 		<div class="common"><!--------------------------Introduction / Home------------------------------>
-        <h2 class="display-5"> Office of Research Innovation and Commerciallization</h2><br>
-        <p id="introduction">
-            The Office of the Research, Innovation and Commercialization has been established at Quaid-e-Awam University of Engineering, Science and Technology, Nawabshah, Sindh, Pakistan. As universities become more entrepreneurial and look toward technology transfer
-            into non-traditional fields, there is a need for alternative conceptualizations of technology transfer that are more accurate and realistic than the traditional linear model. The Office of the Research Innovation and Commercialization are
-            being establish to link research and commercialization from the University with emerging and existing firms across Pakistan and around the world. The ORIC consists of three important wings namely Research Development and Operation, Innovation<h5 id="Vision"></h5>
-            and Research Commercialization/Entrepreneurship.
-        </p>  
+  <div class="container mt-3">
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV" class="mt-3">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md text-center "><img id="profile" src="images/bg.jpg" alt=""></div>
+          <div class="col-md">
+            <p id="bio">
+                Hi this is <strong>Hadi</strong> here <br>
+                Hadi is <strong>Computer Systems Engineer</strong> <br>
+                Hadi loves to <strong>watch tv series</strong> <br>
+                Hadi love to <strong>learn new technologies</strong> <br>
+                Hadi code in many <strong>programming languages</strong> <br>
+                Hadi uses <strong>Adobe Illustrator</strong> <br>
+                Hadi love to <strong>try hand on any book</strong> <br>
+                Hadi's last wish would be <strong>reading all books</strong>
+            </p>
+          </div>
+        </div>
+      </div><h2 id="academic"></h2><br><br><br><br><br>
+      <!--academics section-->
+      <div  class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2> <mark class="a">Academics</mark> </h2><br>
+            <h4><mark> Matric</mark><br> <span class="badge badge-primary">Global Science College Larkana</span></h4><br>
+            <h4><mark> Intermediate</mark><br> <span class="badge badge-primary">Govt. Degree College Larkana</span></h4><br>
+            <h4><mark> B.E</mark><br> <span class="badge badge-warning">Computer Systems, cont..</span></h4>
+          </div>
+          <div class="col-md-6 text-center ">
+            <img id="academics" src="images/academics.jpg" alt="">
+          </div>
+        </div>
+      </div><h2 id="skill"></h2><br><br><br><br><br>
+      <!--skills section start here-->
+      <div class="container ">
+        <div class="row ">
+          <div class="col-md  ">
+            <h2 class="g" >Skills</h2>
+            <img src="images/skill.jpeg" alt=""></div>
+          <div class="col-md">
+            <h3><span class="badge badge-primary">programming</span></h3>
+            <h3><span class="badge badge-secondary">Graphic Designing</span></h3>
+            <h3><span class="badge badge-danger">Reading</span></h3>
+            <h3><span class="badge badge-success">Event Management</span></h3>
+            <h3><span class="badge badge-warning">Git Version Control</span></h3>
+            <h3><span class="badge badge-light">web Development</span></h3>
+            <span></span>
+          </div>
+        </div>
       </div>
+      <!--contact-->
+      <br><h2 id="contact"></h2><br><br><br><br><br>
+      <footer class="container">
+        <h2 ><mark class="badge badge-light">Contact</mark> </h2><br>
+        <div class="row">
+          <div class="col-md"><a target="_blank" href="https://web.facebook.com/hadibux.mahessar.22"><i id="foot" class="fab fa-facebook"></i></a></div>
+          <div class="col-md"><a target="_blank" href="https://www.instagram.com/hadibuxm"><i id="foot" class="fab fa-instagram"></i></a></div>
+          <div class="col-md"><a target="_blank" href="mailto:mahessarm@gmail.com"><i id="foot" class="fas fa-envelope"></i></a></div>
+          <div class="col-md"><a target="_blank" href="https://linkedin.com/in/hadi-bux-mahessar-6ba883196?fbclid=IwAR3xMARj4HKN6Isb9AQ4a6un1g9HHJxARs9KtVuHyj6LeDSIR0kBtUEPL8g"><i id="foot" class="fab fa-linkedin"></i></a></div>
+        </div><br>
+        <h5 style="text-align: center;">&copy; 2020 Hadi Bux,All Rights Reserved</h5>
+        
+      </footer>
+    </div>
+  </div>
+  <!--javascript for searching-->
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myDIV *").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+    
+      <!--Academics-->
 
-        <div class="common"> <!-----------------------Vision---------------------------->
-        <h2 class="display-5">Vision</h2>
-        <p id="introduction">The office's vision is to enable and lead Pakistan's transformation to a knowledge-based economy dependent upon innovation and entrepreneurship.</p>
-        </div>
-        <div class="common"> <!-----------------------Objectives---------------------------->
-        <h2 class="display-5">Objective</h2>
-        <p>The ORIC serves the following objectives.</p>
-        <ul>
-        	<li><p>Supporting the strategic research directions and policies of the university</p></li>
-        	<li><p>Improving integration of research and education at all levels of the institution</p></li>
-        	<li><p>Increasing and diversifying external research funding</p></li>
-        	<li><p>Improving recruitment and retention of the top faculty</p></li>
-        	<li><p>Improving and strengthening university-industry relationships</p></li>
-        	<li><p>Promoting entrepreneurship, technology-transfer and commercialization activities which improve and support the economy</p></li>
-        	<li><p>Promoting and improving multi-disciplinary research initiatives</p></li>
-        </div>
-        <div class="common">
-        	<h2 class="display-5">Organizational Structure</h2>
-        	<figure class="img-fluid">
-        		<img src="image/staff.jpg" class="center" alt="Organizational Structure" style="max-width: 100%; max-height: 70%">
-        	</figure>
-        </div><!--Team-->
-        <div  class="common ">
-          <h2 id="Team" class="display-5">Team</h2>
-          <img id="teamimg1" src="image/m2.jpg" alt="">
-          <h2  style="font-size: 20px;text-align: center;">Prof. Dr. Pardeep Kumar <br>Director ORIC</h2>
-          <img id="teamimg2" src="image/m1.jpg" alt="">
-          <h2  style="font-size: 20px;text-align: center;">Prof. Dr. Adnan Rajpar <br>Manager Operations Operations </h2>
-        </div>
-    </article>
-    <footer id="Contact">
-    	<div class="container">
-    		<h2 class="display-4">Contact us</h2>
-    		<h2 class="show">Director : Prof. Dr. Pardeep Kumar</h2><br>
-  				  <img src="image/locaton.png" alt="Location Logo" class="contactimage"><h2 class="display-3" >Adress : Quaid-e-Awam University Sakrand Road, Nawabshah, Sindh, Pakistan</h2>
-  					<img src="image/email.png" alt="Email Logo" class="contactimage"><h2 class="display-3" >Email : director_oric@quest.edu.pk</h2>
-   					 <img src="image/phone.png" alt="phone Logo" class="contactimage"><h2 class="display-3" >Phone :  +92 244 9370381-5 (Ext. 2640)</h2><br>
-    		<h2 class="display-41">Social Links</h2>
-    		<div class="row">
-   					 <div class="col-sm">
-  						    <img src="image/facebook.png" alt="Email Logo" class="footimage"><a class="display-31" href="#">Facebook</a>
-  					  </div>
-        </div>
-        <hr color="white" style="margin-bottom: 5px;">
-        <h4 class="bottom">©2020|All Rights Reserved By ORIC</h4>
-    </footer>
-    	</div>
-</div>
-<script src="js/main.js"></script>
-</body>
+
+        
+    </div>
+     
+      
+</html>
