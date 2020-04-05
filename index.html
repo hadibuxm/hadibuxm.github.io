@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hadi Bux Muhkumdin</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"><!--CUSTOM CSS-->
+    <!--BOOTSTRAP FILES-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-  
+  <!--NAVIGATION BAR-->
     <nav  class="navbar navbar-expand-md bg-light  navbar-light fixed-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#">Hadi Bux</a>
@@ -50,14 +52,15 @@
   <div class="container mt-3">
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <div id="myDIV" class="mt-3">
+      <!--INTRODUCTION-->
       <div class="container"> 
         <div class="row">
           <div class="col-md text-center "><img id="profile" src="images/bg.jpg" alt=""></div>
           <div class="col-md">
-            <p id="bio">
-                Hi this is <strong>Hadi</strong> here <br>
+            <p onload="biofunction" id="bio">
+                Hi this is <strong>Hadi</strong><br>
                 Hadi is <strong>Computer Systems Engineer</strong> <br>
-                Hadi loves to <strong>watch tv series</strong> <br>
+                Hadi love to <strong>watch tv series</strong> <br>
                 Hadi love to <strong>learn new technologies</strong> <br>
                 Hadi code in many <strong>programming languages</strong> <br>
                 Hadi uses <strong>Adobe Illustrator</strong> <br>
@@ -72,7 +75,7 @@
         <div class="row">
           <div class="col-md-6">
             <h2> <mark class="a">Academics</mark> </h2><br>
-            <h4><mark> Matric</mark><br> <span class="badge badge-primary">Global Science College Larkana</span></h4><br>
+            <h4><mark id="sub"> Matric</mark><br> <span class="badge badge-primary">Global Science College Larkana</span></h4><br>
             <h4><mark> Intermediate</mark><br> <span class="badge badge-primary">Govt. Degree College Larkana</span></h4><br>
             <h4><mark> B.E</mark><br> <span class="badge badge-warning">Computer Systems, cont..</span></h4>
           </div>
@@ -109,7 +112,6 @@
           <div class="col-md"><a target="_blank" href="https://linkedin.com/in/hadi-bux-mahessar-6ba883196?fbclid=IwAR3xMARj4HKN6Isb9AQ4a6un1g9HHJxARs9KtVuHyj6LeDSIR0kBtUEPL8g"><i id="foot" class="fab fa-linkedin"></i></a></div>
         </div><br>
         <h5 style="text-align: center;">&copy; 2020 Hadi Bux,All Rights Reserved</h5>
-        
       </footer>
     </div>
   </div>
@@ -124,12 +126,5 @@
       });
     });
   </script>
-    
-      <!--Academics-->
-
-
-        
-    </div>
-     
-      
+</body>   
 </html>

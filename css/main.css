@@ -14,18 +14,41 @@ body{
 #profile{
     width: 340px;
     height: 340px;
-}
+    border-radius: 50%;
+    
+}/*
+@keyframes profileanimate{
+    from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 50%;
+    }
+}*/
+/*
 .test{
     height: auto;
     margin: auto;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right,black 40%,black 60%),url(../images/bg.jpg);
     background-blend-mode:screen;
-}
+}*/
 #bio{
     line-height: 45px;
     color: rgb(231, 81, 21);
     text-align: justify;
+    animation-name: bioanimation;
+    animation-duration: 2.8s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bioanimation{
+    from{
+    visibility: hidden;
+    color: white;
+    }
+    to{
+        color: rgb(231, 81, 21);
+    }
 }
 .g{
     border-bottom: 2.5px solid rgb(231, 81, 21);
