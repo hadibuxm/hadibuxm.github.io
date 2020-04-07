@@ -1,13 +1,7 @@
-
 body{
     padding-top: 50px;
 }
-#logo{
-    width: 120px;
-    height: 120px;
-    float: left;
-}
-#profile{
+#profile-pic{
     width: 340px;
     height: 340px;
     border-radius: 50%;
@@ -29,6 +23,7 @@ body{
     background-image: linear-gradient(to right,black 40%,black 60%),url(../images/bg.jpg);
     background-blend-mode:screen;
 }*/
+/*ABOUT PARAGRAPH*/
 #bio{
     line-height: 45px;
     color: rgb(231, 81, 21);
@@ -46,24 +41,28 @@ body{
         color: rgb(231, 81, 21);
     }
 }
-.g{
+.skill-border{
     border-bottom: 2.5px solid rgb(231, 81, 21);
     border-right: 2px solid rgb(231, 81, 21);
 }
-.a{
+.academic-border{
     border-left: 2.5px solid rgb(231, 81, 21);
     border-bottom: 2.5px solid rgb(231, 81, 21);
 }
-#academics{
+/*ACADEMICS SECTION*/
+#academic-image{
     width:300px ;
     height: 300px;
 }
 body span{
     font-size: 15px;
 }
+/*HOVER LINK*/
 .nav-link:hover{
     border-bottom: 2.5px solid rgb(231, 81, 21);
+    font-size: 20px
 }
+/*FOOTER*/
 #foot{
     color: rgb(231, 81, 21);font-size: 40px;
 }
