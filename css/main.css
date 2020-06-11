@@ -59,9 +59,13 @@ body span{
 }
 /*HOVER LINK*/
 .nav-link:hover{
-    border-bottom: 2.5px solid rgb(231, 81, 21);
+    border-bottom: 2.5px solid rgb(231, 235, 221);
     font-size: 20px
 }
+/*
+.nav .nav-item {
+    color: rgb(50, 171, 219);
+}*/
 /*FOOTER*/
 #foot{
     color: rgb(231, 81, 21);font-size: 40px;
