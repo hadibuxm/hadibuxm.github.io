@@ -49,6 +49,25 @@ body{
     border-left: 2.5px solid rgb(231, 81, 21);
     border-bottom: 2.5px solid rgb(231, 81, 21);
 }
+#cover{
+    max-width: 100%;
+    height: auto;
+}
+.Cover {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+  }
+  
+ 
 /*ACADEMICS SECTION*/
 #academic-image{
     width:300px ;
