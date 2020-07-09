@@ -26,6 +26,14 @@ body{
     background-blend-mode:screen;
 }*/
 /*ABOUT PARAGRAPH*/
+#about{
+    margin-top:80px;
+    text-align: justify;
+    color: rgb(28, 177, 223);
+    font-family: 'Kaushan Script';
+    font-size: 25px;
+    line-height: 40px;
+}
 #bio{
     line-height: 40px;
     color: rgb(255, 255, 255);
@@ -62,10 +70,13 @@ body{
         color: rgb(231, 81, 21);
     }
 }
-#reader{
+#reader-heading{
     font-family:'Sofia';
     color: rgb(28, 177, 223);
     font-style: italic;
+}
+#p-heading{
+    color: rgb(28, 177, 223);
 }
 .skill-border{
     border-bottom: 2.5px solid rgb(231, 81, 21);
@@ -83,12 +94,6 @@ body{
     font-family: 'Sofia';
     font-style: italic;
 }
-.Cover {
-    position: relative;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: black;
-  }
   #text{
       line-height: 30px;
   }
@@ -124,7 +129,4 @@ body span{
 /*FOOTER*/
 #foot{
     color: rgb(231, 81, 21);font-size: 40px;
-}
-footer{
-    background-color: rgb(220, 245, 245);
 }
