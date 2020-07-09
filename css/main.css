@@ -1,6 +1,8 @@
 body{
-    padding-top: 50px;
+    padding-top: 50px; 
+    background-color: black !important;
 }
+
 #profile-pic{
     width: 340px;
     height: 340px;
@@ -25,12 +27,31 @@ body{
 }*/
 /*ABOUT PARAGRAPH*/
 #bio{
-    line-height: 45px;
-    color: rgb(231, 81, 21);
+    line-height: 40px;
+    color: rgb(255, 255, 255);
     text-align: justify;
+    /*background-color: rgb(120, 11, 163);
+    border: 8px rgb(109, 10, 148) solid;
+    border-radius: 20px;*/
+    font-family: 'Dancing Script' !important;
+    font-size: 24px;
     animation-name: bioanimation;
     animation-duration: 2.8s;
     animation-timing-function: ease-in-out;
+    word-spacing: 2px;
+}
+#pbio{
+    line-height: 40px;
+    color: rgb(241, 102, 22);
+    text-align: justify;
+    /*background-color: rgb(120, 11, 163);
+    border: 8px rgb(109, 10, 148) solid;
+    border-radius: 20px;*/
+    font-family: 'Telex' !important;
+    animation-name: bioanimation;
+    animation-duration: 2.8s;
+    animation-timing-function: ease-in-out;
+    word-spacing: 2px;
 }
 @keyframes bioanimation{
     from{
@@ -41,6 +62,11 @@ body{
         color: rgb(231, 81, 21);
     }
 }
+#reader{
+    font-family:'Sofia';
+    color: rgb(28, 177, 223);
+    font-style: italic;
+}
 .skill-border{
     border-bottom: 2.5px solid rgb(231, 81, 21);
     border-right: 2px solid rgb(231, 81, 21);
@@ -49,21 +75,28 @@ body{
     border-left: 2.5px solid rgb(231, 81, 21);
     border-bottom: 2.5px solid rgb(231, 81, 21);
 }
-#cover{
+#responsive{
     max-width: 100%;
     height: auto;
+}
+.navbar-brand{
+    font-family: 'Sofia';
+    font-style: italic;
 }
 .Cover {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: black;
   }
-  
+  #text{
+      line-height: 30px;
+  }
   
   /* Top left text */
   .top-left {
     position: absolute;
-    top: 130px;
+    top: 70px;
     left: 10px;
   }
   
@@ -79,7 +112,10 @@ body span{
 /*HOVER LINK*/
 .nav-link:hover{
     border-bottom: 2.5px solid rgb(231, 235, 221);
-    font-size: 20px
+    font-size: 20px;
+}
+.nav-link{
+    color: rgb(28, 177, 223) !important;
 }
 /*
 .nav .nav-item {
