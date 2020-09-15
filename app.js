@@ -1,3 +1,6 @@
+function submit_message(){
+    alert('Submitted')
+}
 var firebaseConfig = {
     apiKey: "AIzaSyC0KfP1NSYspOzA_9dW588XzemfN6RpLv0",
     authDomain: "nie-internship-7f904.firebaseapp.com",
