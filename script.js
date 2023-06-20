@@ -61,7 +61,7 @@ function processCommand(command) {
             displayOutput('Available commands: about, projects, contact');
             break;
         case 'about':
-            displayOutput('⚙️ A Computer who Engineer love to code in python on linux platforms ');
+            displayOutput('⚙️ A Computer Engineer who love to code in python on linux platforms ');
             break;
         case 'projects':
             displayOutput('⚠️ Sorry to say I cannot share python scripts because of promises made to clients. But be sure you will get the best ');
