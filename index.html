@@ -3,43 +3,25 @@
 <head>
     <title>Terminal Web Portfolio</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        /* Adjust terminal width for smaller screens */
-        @media screen and (max-width: 600px) {
-            .terminal {
-                width: 90%;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="terminal-button close"></span>
-                        <span class="terminal-button minimize"></span>
-                        <span class="terminal-button maximize"></span>
-                    </div>
-                    <div class="terminal-body">
-                        <p>Welcome to my web portfolio terminal!</p>
-                        <p>Type 'help' to see available commands.</p>
-                        <div class="terminal-input">
-                            <span class="prompt">$hadibux@coding:</span>
-                            <input type="text" id="command-input">
-                        </div>
-                        <div id="terminal-output"></div>
-                    </div>
-                </div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="terminal-button close"></span>
+            <span class="terminal-button minimize"></span>
+            <span class="terminal-button maximize"></span>
+        </div>
+        <div class="terminal-body">
+            <p>Welcome to my web portfolio terminal!</p>
+            <p>Type 'help' to see available commands.</p>
+            <div class="terminal-input">
+                <span class="prompt">$hadibux@coding:</span>
+                <input type="text" id="command-input">
             </div>
+            <div id="terminal-output"></div>
         </div>
     </div>
 
-    <!-- Add Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
